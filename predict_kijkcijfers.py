@@ -415,7 +415,7 @@ def make_predictions(data):
 
 
 if __name__ == "__main__":
-    to_predict = pd.read_csv('./to_predict/test_input.csv', sep=';')
+    to_predict = pd.read_csv('./to_predict/Input_voor_examen.csv', sep=';')
 
     preds = make_predictions(to_predict)
     to_predict['predictions'] = preds
